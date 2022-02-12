@@ -12,6 +12,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
     /*
      ! Temperature Buttons
      */    
+
     // celsius buttons
         var btnceltofah = document.getElementById("btnceltofah")
         var btnceltokev = document.getElementById("btnceltokel")
@@ -414,7 +415,9 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         clear.onclick = function(){ 
             num.value=""
-            result.innerHTML=""    
+            result.innerHTML=""
+            studentData.value=""
+            studentOutput.innerHTML=""
         }
 
 
@@ -426,5 +429,5 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
 
 
-        
+
 
