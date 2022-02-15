@@ -2,7 +2,7 @@
 var num = document.getElementById("num") // numeric value pulled into our formulas
 
 // lables and results
-var label = document.getElementById("label")
+var label = document.getElementsByClassName("label")
 var clear = document.getElementById("clear")
 var result = document.getElementById("result")
 var studentData = document.getElementById("student-data") // input for student data
@@ -219,8 +219,8 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnceltofah.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round(celtofah(n).toFixed(2))
-            if(result % 2 === 0) {
+            var round = celtofah(n).toFixed(2)
+            if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
             return result.innerHTML = round
@@ -228,8 +228,8 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnceltokev.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((celtokev(n)).toFixed(2))
-            if(result % 2 === 0) {
+            var round = celtokev(n).toFixed(2)
+            if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
             return result.innerHTML = round
@@ -237,7 +237,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnceltoran.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((celtoran(n)).toFixed(2))
+            var round = celtoran(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -248,7 +248,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnfahtoran.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((fahtoran(n)).toFixed(2))
+            var round = fahtoran(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -257,7 +257,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnfahtokel.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((fahtokel(n)).toFixed(2))
+            var round = fahtokel(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -266,7 +266,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
          btnfahtocel.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((fahtocel(n)).toFixed(2))
+            var round = fahtocel(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -276,7 +276,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
             // Rankine
         btnrantofah.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((rantofah(n)).toFixed(2))
+            var round = rantofah(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -285,7 +285,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnrantocel.onclick = function(){
             var n = parseInt(num.value)
-            var round = (rantocel(n)).toFixed(2)
+            var round = rantocel(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -294,7 +294,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnrantokel.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((rantokel(n)).toFixed(2))
+            var round = rantokel(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -305,7 +305,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
             // Kelvin
         btnkeltofah.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((keltofah(n)).toFixed(2))
+            var round = keltofah(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -314,7 +314,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnkeltocel.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((keltocel(n)).toFixed(2))
+            var round = keltocel(n).toFixed(2)
             if(result % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -323,7 +323,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnkeltoran.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((keltoran(n)).toFixed(2))
+            var round = keltoran(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -337,7 +337,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnlittotab.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round(littotab(n).toFixed(2))
+            var round = littotab(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -346,7 +346,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnlittocup.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((littocup(n)).toFixed(2))
+            var round = littocup(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -355,7 +355,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnlittogal.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((littogal(n)).toFixed(2))
+            var round = littogal(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -366,7 +366,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btntabtolit.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((tabtolit(n)).toFixed(2))
+            var round = tabtolit(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -375,7 +375,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
         
         btntabtocup.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((tabtocup(n)).toFixed(2))
+            var round = tabtocup(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -384,7 +384,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btntabtogal.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((tabtogal(n)).toFixed(2))
+            var round = tabtogal(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -395,7 +395,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btncuptolit.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((cuptolit(n)).toFixed(2))
+            var round = cuptolit(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -404,7 +404,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btncuptotab.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((cuptotab(n)).toFixed(2))
+            var round = cuptotab(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -413,7 +413,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btncuptogal.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((cuptogal(n)).toFixed(2))
+            var round = cuptogal(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -424,7 +424,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btngaltolit.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((galtolit(n)).toFixed(2))
+            var round = galtolit(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -434,7 +434,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btngaltotab.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((galtotab(n)).toFixed(2))
+            var round = galtotab(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -443,7 +443,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btngaltocup.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((galtocup(n)).toFixed(2))
+            var round = galtocup(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -455,7 +455,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnCubInchToCubFeet.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((cubInchToCubFeet(n)).toFixed(2))
+            var round = cubInchToCubFeet(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -464,7 +464,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnCubFeetToCubInch.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((cubFeetToCubInch(n)).toFixed(2))
+            var round = cubFeetToCubInch(n).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -479,12 +479,11 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
     
         submitSD.onclick = function(){
             if (studentData.value == result.innerHTML){
-                return studentOutput.innerHTML= Math.round(result.innerHTML +" is correct")
+                return studentOutput.innerHTML= (result.innerHTML +" is correct")
              } else if (studentData.value != result.innerHTML){
-                 return studentOutput.innerHTML= Math.round(" incorrect")
+                 return studentOutput.innerHTML= (" incorrect")
               }
         }
-  
 
         clear.onclick = function(){ 
             num.value=""
@@ -492,15 +491,6 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
             studentData.value=""
             studentOutput.innerHTML=""
         }
-
-
-
-
-
-
-
-
-
 
 
 
