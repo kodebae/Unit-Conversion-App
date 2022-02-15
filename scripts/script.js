@@ -103,7 +103,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
             return (fahtokel - 32) * 5/9 + 273.15
         }
         var fahtocel = function(fahtocel){
-            return (fahtocel - 32)/1.8
+            return (fahtocel - 32) / 1.8
         }
 
             // Rankine
@@ -113,7 +113,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
         }
         
         var rantocel = function(rantocel){
-            return rantocel - 491.67 /1.8
+            return (rantocel - 491.67) / 1.8
         }
 
         var rantokel = function(rantokel){
@@ -285,7 +285,7 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
 
         btnrantocel.onclick = function(){
             var n = parseInt(num.value)
-            var round = Math.round((rantocel(n)).toFixed(2))
+            var round = (rantocel(n)).toFixed(2)
             if(n % 2 === 0) {
                 return result.innerHTML = Math.trunc(round)
             }
@@ -478,13 +478,13 @@ var studentOutput = document.getElementById("student-output") // p tag to post o
     */
     
         submitSD.onclick = function(){
-            // if (typeof())
             if (studentData.value == result.innerHTML){
-               return studentOutput.innerHTML= (result.innerHTML +" is correct")
-            } else if (studentData.value != result.innerHTML){
-                return studentOutput.innerHTML= (" incorrect")
-             }
+                return studentOutput.innerHTML= Math.round(result.innerHTML +" is correct")
+             } else if (studentData.value != result.innerHTML){
+                 return studentOutput.innerHTML= Math.round(" incorrect")
+              }
         }
+  
 
         clear.onclick = function(){ 
             num.value=""
