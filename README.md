@@ -22,6 +22,8 @@ cd into Unit-Conversion-App and double click the index.html file to run in brows
 
 5. Add more detailed outputs and dropdowns. Group like fucntions together and redesign the application to only show: temperatures, volumes, or length measurements when selected. Since temperatures can not be converted to lengths, there is no need to show both options at once.
 
+6. Add validation for invalid inputs.
+
 ### Copyright and licensing information 
 Copyright (c) 2022 KodeBae
 MIT License
